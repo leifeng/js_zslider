@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .sliderF {
+            width: 980px;
+            height: 466px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .sliderF .sliderC {
+            float: left;
+            list-style: none;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="slider1" class="sliderF">
+    <div class="sliderC"><img src="1.png" width="950">
+    </div>
+    <div class="sliderC"><img src="2.png" width="950">
+    </div>
+    <div class="sliderC"><img src="3.png" width="950">
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div>
+    <div id="slider2" class="sliderF">
+        <div class="sliderC"><img src="1.png" width="950">
+        </div>
+        <div class="sliderC"><img src="2.png" width="950">
+        </div>
+        <div class="sliderC"><img src="3.png" width="950">
+        </div>
+        <div class="sliderC"><img src="2.png" width="950">
+        </div>
+        <div class="sliderC"><img src="3.png" width="950">
+        </div>
+        <div class="sliderC"><img src="1.png" width="950">
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<script src="zslider.js"></script>
+<script>
+    zslider(document.getElementById('slider1'), 980, 950);
+    zslider(document.getElementById('slider2'), 980, 950);
+</script>
+</body>
+</html>
